@@ -1,6 +1,6 @@
 # R REST APIs with plumber
 
-*This is recreating a previously deleted repository* 
+*This is recreating a previously deleted repository.* 
 
 You've just created a machine learning model or a piece of analysis in R and want to make it available to others to use. One way to share your work is to transform it into a web service - i.e. an API. Other developers would therefore only need to learn how to interact with your API, rather than how to code in R, to use your model or analysis. The `plumber` R package is the tool to do that: it allows us to expose R code as a service available to any other service on the web.
 
