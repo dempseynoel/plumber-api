@@ -92,11 +92,11 @@ api <- plumb(file = 'plumber.R')
 pr_run(api)
 ```
 
-![api](https://github.com/dempseynoel/plumber-api-intro/blob/main/images/countries-endpoint.png)
+![api](/images/countries-endpoint.png)
 
 If we submited a request to the `/countries` endpoint asking for countries in Asia which had a life expectancy greater than 80 and had a population greater than 20 million then we'd get back two entries - Hong Kong and Israel (see the Gapminder website for information on how it codes the dataset).
 
-![result](https://github.com/dempseynoel/plumber-api-intro/blob/main/images/returned-result.png)
+![result](/images/returned-result.png)
   
 ## Docker
 
@@ -141,11 +141,11 @@ Once it's completed building the image, and started a container we should be abl
 
 The first step towards hosting our API is to create an Azure Container Registry to store our Docker image in. Azure Container Registry is a private registry service for building, storing, and managing container images and other related artifacts. To set up ACR, go to the Azure Portal, login and create a new Container Registry. 
 
-![result](https://github.com/dempseynoel/plumber-api-intro/blob/main/images/container-registry.png)
+![result](/images/container-registry.png)
 
 Once there, fill in all the required information. If you don’t have a resource group yet, you need to create one.
 
-![result](https://github.com/dempseynoel/plumber-api-intro/blob/main/images/create-registry.png)
+![result](/images/create-registry.png)
 
 Click ‘review + create’. When deployment of the resource is finished you can visit your resource. The next thing you want to do is to enable the admin user. You can do that at ‘Access keys’ under ‘Settings’. This allows you to publish a Docker image to the registry from the Terminal.
 
@@ -174,20 +174,20 @@ After finishing pushing the image to your container registry, we can deploy the 
 Azure App Service enables you to build and host web apps and web services in any programming language without managing infrastructure. It offers features like auto-scaling and high availability, supports Linux and Windows, and enables automated deployments from any Git repo. Azure App Services offers standard runtime stacks, but you can also use a custom Docker image to run your web app. Just like we’re going to do.
 First you need to create a new Web App resource:
 
-![result](https://github.com/dempseynoel/plumber-api-intro/blob/main/images/azure-webapp.png)
+![result](/images/azure-webapp.png)
 
 Fill in the required details and pick ‘Docker container’ as publishing choice. You’ll need an App Service Plan to add your Web App to.
 
-![result](https://github.com/dempseynoel/plumber-api-intro/blob/main/images/create-webapp-resource.png)
+![result](/images/create-webapp-resource.png)
 
 The next step is the Docker configuration:
 
-![result](https://github.com/dempseynoel/plumber-api-intro/blob/main/images/webapp-docker.png)
+![result](/images/webapp-docker.png)
 
 The images will be automatically retrieved once you select your registry. Click ‘review + create’ and wait for deployment to be finished.
 And that’s it! You’re now able to access your R Plumber API via your browser, Postman, or your terminal:
 
-![result](https://github.com/dempseynoel/plumber-api-intro/blob/main/images/api-output.png)
+![result](/images/api-output.png)
 
 ## Recap and next steps
 
