@@ -149,7 +149,7 @@ Once there, fill in all the required information. If you don’t have a resource
 
 Click ‘review + create’. When deployment of the resource is finished you can visit your resource. The next thing you want to do is to enable the admin user. You can do that at ‘Access keys’ under ‘Settings’. This allows you to publish a Docker image to the registry from the Terminal.
 
-![result](https://github.com/dempseynoel/plumber-api-intro/blob/main/images/acr-admin.png)
+![result](/images/acr-admin.png)
 
 We now need to push our image to the ACR, to do this we can call the following commands:
 
